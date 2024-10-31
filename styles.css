@@ -208,3 +208,10 @@ body {
   background-position: center;
   border: 0;
 }
+
+.todos-list:empty::after {
+  content: "No todos yet";
+  color: hsla(0, 0%, 80%, 0.5);
+  font-size: 1rem;
+  font-weight: 500;
+}
