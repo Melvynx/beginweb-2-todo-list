@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SimpleList</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="todos">
+      <div class="todos-header">
+        <h2 class="todos-title">Todos</h2>
+        <button id="add-todo" class="add-todo">
+          <i data-lucide="plus"></i>
+        </button>
+      </div>
+      <div class="todos-list" id="list">
+        <div class="todo">
+          <div class="todo-checkbox">
+            <input type="checkbox" />
+            <div class="todo-filled"></div>
+          </div>
+          <p class="todo-text">Lorem ipsum dolor sit amet.</p>
+        </div>
+      </div>
+    </div>
+    <div class="background-selector">
+      <button
+        class="background-selector-item"
+        style="background-image: url(./images/background-1.jpg)"
+      ></button>
+      <button
+        class="background-selector-item"
+        style="background-image: url(./images/background-2.jpg)"
+      ></button>
+      <button
+        class="background-selector-item"
+        style="background-image: url(./images/background-3.jpg)"
+      ></button>
+    </div>
+
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script>
+      lucide.createIcons();
+    </script>
+    <script src="script.js"></script>
+  </body>
+</html>
